@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App - Project Details</title>
+    <link rel="stylesheet" href="Task Management.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Iqra Noor</div>
+            <a href="Portfolio.html" class="back-btn" onclick="history.back()">
+                <span>← Back to Portfolio</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <span class="project-icon">📋</span>
+            <h1>Task Management App</h1>
+            <p>A collaborative task management application with real-time updates, built using Vue.js and Firebase</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Project Details -->
+                <div class="project-details fade-in">
+                    <h2 class="section-title">Project Overview</h2>
+                    <p class="project-description">
+                        This collaborative task management application revolutionizes how teams organize, track, and
+                        complete their work. Built with Vue.js and powered by Firebase's real-time database, it enables
+                        seamless collaboration where team members can see updates instantly without refreshing the page.
+                    </p>
+                    <p class="project-description">
+                        The application features an intuitive drag-and-drop interface, customizable project boards, and
+                        comprehensive task tracking capabilities. Users can create projects, assign tasks to team
+                        members, set deadlines, track progress, and communicate through integrated comments and
+                        notifications.
+                    </p>
+                    <p class="project-description">
+                        Key architectural decisions focused on real-time synchronization, offline capability, and
+                        scalable data structures that can handle growing teams and complex project hierarchies while
+                        maintaining optimal performance.
+                    </p>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="project-sidebar">
+                    <!-- Tech Stack -->
+                    <div class="sidebar-card fade-in">
+                        <h3 class="sidebar-title">Technology Stack</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.js 3</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Firestore</span>
+                            <span class="tech-tag">Vue Router</span>
+                            <span class="tech-tag">Vuex</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Firebase Auth</span>
+                            <span class="tech-tag">PWA</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Stats -->
+                    <div class="sidebar-card fade-in">
+                        <h3 class="sidebar-title">Project Stats</h3>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Months</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12K+</span>
+                                <span class="stat-label">Lines of Code</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">35+</span>
+                                <span class="stat-label">Components</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Performance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="sidebar-card fade-in">
+                        <h3 class="sidebar-title">Project Links</h3>
+                        <div class="action-buttons">
+                            <a href="#" class="btn btn-primary">
+                                <span>🔗</span> View Project
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <span>📁</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Features -->
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <span class="feature-icon">⚡</span>
+                    <h3 class="feature-title">Real-time Updates</h3>
+                    <p class="feature-desc">Instant synchronization across all devices using Firebase real-time database
+                        for seamless collaboration.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <span class="feature-icon">👥</span>
+                    <h3 class="feature-title">Team Collaboration</h3>
+                    <p class="feature-desc">Multi-user workspace with role-based permissions, task assignments, and team
+                        member management.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <span class="feature-icon">📊</span>
+                    <h3 class="feature-title">Project Boards</h3>
+                    <p class="feature-desc">Kanban-style boards with drag-and-drop functionality for intuitive task
+                        organization and workflow management.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <span class="feature-icon">🔔</span>
+                    <h3 class="feature-title">Smart Notifications</h3>
+                    <p class="feature-desc">Real-time notifications for task updates, deadlines, comments, and team
+                        activities with customizable preferences.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <span class="feature-icon">📱</span>
+                    <h3 class="feature-title">Progressive Web App</h3>
+                    <p class="feature-desc">PWA capabilities with offline support, push notifications, and native
+                        app-like experience on mobile devices.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <span class="feature-icon">📈</span>
+                    <h3 class="feature-title">Analytics Dashboard</h3>
+                    <p class="feature-desc">Comprehensive project analytics with progress tracking, productivity
+                        metrics, and detailed reporting features.</p>
+                </div>
+            </div>
+
+            <!-- Architecture -->
+            <div class="architecture fade-in">
+                <h2 class="section-title">System Architecture</h2>
+                <p class="project-description">
+                    The application follows a modern component-based architecture with Vue.js at the frontend and
+                    Firebase providing backend services. The real-time synchronization is achieved through Firestore's
+                    live listeners, ensuring all users see updates instantly.
+                </p>
+                <div class="architecture-diagram">
+                    <div class="arch-layer">Vue.js Frontend Components</div>
+                    <div class="arch-layer">Vuex State Management</div>
+                    <div class="arch-layer">Firebase Authentication</div>
+                    <div class="arch-layer">Firestore Real-time Database</div>
+                    <div class="arch-layer">Cloud Functions & Storage</div>
+                </div>
+            </div>
+
+            <!-- Screenshots -->
+            <div class="screenshots fade-in">
+                <h2 class="section-title">Application Screenshots</h2>
+                <div class="screenshot-grid">
+                    <div class="screenshot-item">
+                        <div class="screenshot-placeholder">📋</div>
+                        <div class="screenshot-caption">Project Dashboard & Board View</div>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-placeholder">✅</div>
+                        <div class="screenshot-caption">Task Details & Comments</div>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-placeholder">👥</div>
+                        <div class="screenshot-caption">Team Management</div>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-placeholder">📊</div>
+                        <div class="screenshot-caption">Analytics & Reports</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="Task Management.js"></script>
+</body>
+
+</html>
